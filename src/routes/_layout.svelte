@@ -1,22 +1,29 @@
 <script>
+	import '../styles/theme.css';
 	import Nav from '../components/Nav.svelte';
 
 	export let segment;
 </script>
 
-<style>
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-</style>
-
-<Nav {segment}/>
+<Nav {segment} />
 
 <main>
-	<slot></slot>
+	<slot />
 </main>
+
+<style>
+	:global(#sapper) {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	:global(ul) {
+		padding-left: 1.5em;
+	}
+
+	:global(p) {
+		line-height: 1.5;
+	}
+</style>
