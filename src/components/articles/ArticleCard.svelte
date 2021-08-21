@@ -1,24 +1,24 @@
 <script>
-	export let insight;
+	export let post;
 </script>
 
-<a href="insights/{insight.id}">
-	<div class="insight-card" data-aos="fade-up">
-		<div class="insight-image">
-			<img src={insight.image} alt="Insights" />
+<a href="article/{post.slug}">
+	<div class="article-card" data-aos="fade-up">
+		<div class="article-image">
+			<img src={post.photo} alt="Article" />
 		</div>
-		<div class="insight-detail">
+		<div class="article-detail">
 			<p class="date">
-				{new Date(insight.date_posted).toUTCString().split(' ').slice(0, -2).join(' ')}
+				{post.date_published}
 			</p>
-			<h3>{insight.title}</h3>
-			<p class="description">{insight.overview}</p>
+			<h3>{post.title}</h3>
+			<p class="description">{post.html}</p>
 		</div>
 	</div>
 </a>
 
 <style>
-	.insight-card {
+	.article-card {
 		display: grid;
 		gap: 1em;
 		align-content: flex-start;
@@ -29,12 +29,12 @@
 		box-shadow: 0px 3px 17px rgba(0, 0, 0, 0.14);
 		transition: all 300ms ease-out;
 	}
-	.insight-card:hover {
+	.article-card:hover {
 		box-shadow: 0px 3.4359px 38px rgba(0, 0, 0, 0.2);
 		transform: translateY(-0.5em);
 	}
-	.insight-card:hover .insight-detail h3 {
-		color: #fb6b13;
+	.article-card:hover .article-detail h3 {
+		color: var(--p-turquoise);
 	}
 	img {
 		width: 100%;
@@ -45,7 +45,7 @@
 		left: 0;
 		text-align: center;
 	}
-	.insight-detail {
+	.article-detail {
 		display: grid;
 		flex-direction: column;
 		padding: 0.5em 1em;
@@ -59,6 +59,9 @@
 	a {
 		text-decoration: none;
 	}
+    p, h3 {
+        margin: 0;
+    }
 	h3 {
 		color: #000000;
 		font-size: 1rem;
@@ -72,14 +75,14 @@
 	}
 
 	@media only screen and (max-width: 375px) {
-		.insight-card {
+		.article-card {
 			margin: 0 auto;
 			width: 17.5em;
 		}
 	}
 
 	@media only screen and (max-width: 320px) {
-		.insight-card {
+		.article-card {
 			margin: 0 auto;
 			width: 15em;
 		}
