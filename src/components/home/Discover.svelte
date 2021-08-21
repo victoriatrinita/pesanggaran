@@ -3,7 +3,7 @@
 	<div>
 		<a href="gallery">
 			<div class="insight-card" data-aos="fade-up">
-				<img src="photos/sukamade-pantai.jpg" alt="Beaches" />
+				<img src="photos/pantai-rajagwesi.jpg" alt="Beaches" />
 				<p>Beaches</p>
 			</div>
 		</a>
@@ -17,7 +17,7 @@
 
 		<a href="gallery">
 			<div class="insight-card" data-aos="fade-up">
-				<img src="photos/sukamade-penyu.jpg" alt="Flora and Fauna" />
+				<img src="photos/penyu-sukamade.jpg" alt="Flora and Fauna" />
 				<p>Flora and Fauna</p>
 			</div>
 		</a>
