@@ -6,7 +6,7 @@
 	export let title, higlightedTitle;
 </script>
 
-<main>
+<main class="photoCarousel">
 	<h1>{title} <span>{higlightedTitle}</span></h1>
 	<Carousel perPage={3} dots={false} autoplay={0} controls>
 		<div class="control" slot="left-control">
@@ -56,13 +56,20 @@
 		border-radius: 50%;
 		height: 3em;
 	} */
+	.photoCarousel :global(button.right){
+		right:-10px;
+	}
+	.photoCarousel :global(button.left){
+		left:-10px;
+	}
 	.control {
-		color: #000;
+		color: var(--p-gray);
 		width: 100%;
+		height: 70%;
 		background-color: var(--s-blue);
 		border-radius: 50%;
-		height: 1em;
 	}
+
 	/* .control > div {
 		background-color: var(--s-blue);
 		border-radius: 50%;
