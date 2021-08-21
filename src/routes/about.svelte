@@ -1,7 +1,21 @@
+<script>
+	import Footer from '../components/Footer.svelte';
+	import OurStory from '../components/home/OurStory.svelte';
+	import AboutKandangan from '../components/about/AboutKandangan.svelte';
+	import AboutSarongan from '../components/about/AboutSarongan.svelte';
+	import Values from '../components/about/Values.svelte';
+	import DiveFurther from '../components/home/DiveFurther.svelte';
+	import PlanTrip from '../components/home/PlanTrip.svelte';
+</script>
+
 <svelte:head>
 	<title>About</title>
 </svelte:head>
 
-<h1>About this site</h1>
-
-<p>This is the 'about' page. There's not much here.</p>
+<OurStory />
+<AboutKandangan />
+<AboutSarongan />
+<Values />
+<DiveFurther />
+<PlanTrip />
+<Footer />
