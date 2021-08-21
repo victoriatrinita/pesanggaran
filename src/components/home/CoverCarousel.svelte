@@ -1,7 +1,7 @@
 <script>
 	import Carousel from '@beyonk/svelte-carousel';
 	import Link from '../Link.svelte';
-	export let title, button;
+	export let title, button, coverPhotos;
 </script>
 
 <main>
@@ -14,20 +14,12 @@
 	</div>
 
 	<Carousel perPage={1} autoplay={5e3} duration={1e3}>
+		{#each coverPhotos as coverPhoto}
 		<section>
-			<img src="assets/slide1.jpg" alt="Pesanggaran" />
+			<img src={coverPhoto.src} alt="Pesanggaran" />
 			<p>Location</p>
 		</section>
-
-		<section>
-			<img src="assets/slide2.jpg" alt="Pesanggaran" />
-			<p>Location</p>
-		</section>
-
-		<section>
-			<img src="assets/slide3.jpg" alt="Pesanggaran" />
-			<p>Location</p>
-		</section>
+		{/each}
 	</Carousel>
 </main>
 
