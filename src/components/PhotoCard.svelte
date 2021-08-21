@@ -1,7 +1,11 @@
+<script>
+	export let photo;
+</script>
+
 <a href="articles">
 	<div data-aos="fade-up">
 		<div>
-			<img src="assets/slide1.jpg" alt="destination" />
+			<img src={photo.src} alt="destination" />
 		</div>
 	</div>
 </a>

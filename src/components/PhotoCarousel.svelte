@@ -2,8 +2,8 @@
 	import Carousel from '@beyonk/svelte-carousel';
 	import { ChevronLeftIcon, ChevronRightIcon } from 'svelte-feather-icons';
 	import Link from './Link.svelte';
-	import DestinationCard from './DestinationCard.svelte';
-	export let title, higlightedTitle;
+	import PhotoCard from './PhotoCard.svelte';
+	export let title, higlightedTitle, photos;
 </script>
 
 <main class="photoCarousel">
@@ -22,24 +22,11 @@
 					.slice(-3)
 					.reverse() as insight}
 					<InsightCard {insight} />-->
-		<section>
-			<DestinationCard />
-		</section>
-		<section>
-			<DestinationCard />
-		</section>
-		<section>
-			<DestinationCard />
-		</section>
-		<section>
-			<DestinationCard />
-		</section>
-		<section>
-			<DestinationCard />
-		</section>
-		<section>
-			<DestinationCard />
-		</section>
+		{#each photos as photo}
+			<section>
+				<PhotoCard {photo} />
+			</section>
+		{/each}
 		<!--
 				{/each}
 			{/await}
@@ -56,11 +43,11 @@
 		border-radius: 50%;
 		height: 3em;
 	} */
-	.photoCarousel :global(button.right){
-		right:-10px;
+	.photoCarousel :global(button.right) {
+		right: -10px;
 	}
-	.photoCarousel :global(button.left){
-		left:-10px;
+	.photoCarousel :global(button.left) {
+		left: -10px;
 	}
 	.control {
 		color: var(--p-gray);

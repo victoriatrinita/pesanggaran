@@ -10,10 +10,19 @@
 		{ src: 'assets/slide2.jpg' },
 		{ src: 'photos/kandangan-rumah-apung.jpg' },
 	];
+
+    const photos = [
+		{ src: 'photos/teluk-damai.jpg' },
+		{ src: 'photos/teluk-hijau-2.jpg' },
+		{ src: 'photos/kandangan-rumah-apung.jpg' },
+		{ src: 'photos/sukamade-pantai.jpg' },
+		{ src: 'photos/highland.jpg' },
+	];
+
 </script>
 
 <CoverCarousel title={'Discover Kandangan'} {coverPhotos}/>
 <DescKandangan />
-<PhotoCarousel title={'Must See'} higlightedTitle={'Attractions'} />
+<PhotoCarousel title={'Must See'} higlightedTitle={'Attractions'} {photos}/>
 <ArticlesGrid />
 <Footer />

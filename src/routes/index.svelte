@@ -13,6 +13,16 @@
 		{ src: 'photos/teluk-hijau.jpg' },
 		{ src: 'photos/penyu-hijau.jpg' },
 	];
+
+	const photos = [
+		{ src: 'photos/teluk-damai.jpg' },
+		{ src: 'photos/teluk-hijau-2.jpg' },
+		{ src: 'photos/kandangan-rumah-apung.jpg' },
+		{ src: 'photos/sarongan-pantai-batu.jpg' },
+		{ src: 'photos/pantai-permisan.jpg' },
+		{ src: 'photos/pantai-rajegwesi.jpg' },
+	];
+
 </script>
 
 <svelte:head>
@@ -22,7 +32,7 @@
 <CoverCarousel title={'Spark Your Wanderlust'} button {coverPhotos} />
 <OurStory />
 <Discover />
-<PhotoCarousel title={'Favourite'} higlightedTitle={'Destinations'} />
+<PhotoCarousel title={'Favourite'} higlightedTitle={'Destinations'} {photos} />
 <ArticlesGrid />
 <DiveFurther />
 <PlanTrip />

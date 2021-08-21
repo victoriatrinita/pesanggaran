@@ -3,7 +3,7 @@
 	<div>
 		<a href="gallery">
 			<div class="insight-card" data-aos="fade-up">
-				<img src="photos/pantai-rajagwesi.jpg" alt="Beaches" />
+				<img src="photos/pantai-rajegwesi.jpg" alt="Beaches" />
 				<p>Beaches</p>
 			</div>
 		</a>
