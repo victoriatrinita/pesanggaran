@@ -1,48 +1,23 @@
 <script>
+	import CoverCarousel from '../components/home/CoverCarousel.svelte';
+	import Discover from '../components/home/Discover.svelte';
+	import DiveFurther from '../components/home/DiveFurther.svelte';
+	import OurStory from '../components/home/OurStory.svelte';
+	import PlanTrip from '../components/home/PlanTrip.svelte';
+	import Footer from '../components/Footer.svelte';
+	import PhotoCarousel from '../components/PhotoCarousel.svelte';
+	import ArticlesGrid from '../components/articles/ArticlesGrid.svelte';
 </script>
 
-<style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
-</style>
-
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Visit Kandangan & Sarongan</title>
 </svelte:head>
 
-<h1>Great success!</h1>
-
-<figure>
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<CoverCarousel title={'Spark Your Wanderlust'} button />
+<OurStory />
+<Discover />
+<PhotoCarousel title={'Favourite'} higlightedTitle={'Destinations'} />
+<ArticlesGrid />
+<DiveFurther />
+<PlanTrip />
+<Footer />
