@@ -8,7 +8,7 @@
 	const coverPhotos = [
 		{ src: 'assets/slide1.jpg' },
 		{ src: 'assets/slide2.jpg' },
-		{ src: 'assets/slide3.jpg' },
+		{ src: 'photos/kandangan-rumah-apung.jpg' },
 	];
 </script>
 
