@@ -8,7 +8,7 @@
 	<div>
 		<h1>{title}</h1>
 		{#if button}
-		<Link href="gallery" color="turquoise">Get to Know Pesanggaran</Link>
+		<Link href="gallery" color="turquoise" disabled>Get to Know Pesanggaran</Link>
 		{/if}
 
 	</div>
