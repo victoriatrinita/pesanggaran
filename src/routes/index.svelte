@@ -18,7 +18,7 @@
 		{ src: 'photos/teluk-damai.jpg' },
 		{ src: 'photos/teluk-hijau-2.jpg' },
 		{ src: 'photos/kandangan-rumah-apung.jpg' },
-		{ src: 'photos/sarongan-pantai-batu.jpg' },
+		{ src: 'photos/sarongan-pantai-batu-1.jpg' },
 		{ src: 'photos/pantai-permisan.jpg' },
 		{ src: 'photos/pantai-rajegwesi.jpg' },
 	];

@@ -15,7 +15,7 @@
 		{ src: 'photos/teluk-damai.jpg' },
 		{ src: 'photos/teluk-hijau-2.jpg' },
 		{ src: 'photos/sukamade-pantai.jpg' },
-		{ src: 'photos/sarongan-pantai-batu.jpg' },
+		{ src: 'photos/sarongan-pantai-batu-1.jpg' },
 		{ src: 'photos/pantai-permisan.jpg' },
 	];
 </script>
