@@ -54,7 +54,7 @@
 		cursor: pointer;
 		width: 1em;
 		height: 1em;
-		background-color: var(--p-gray);
+		background-color: var(--t-gray);
 	}
 	main :global(.carousel li.active) {
 		cursor: pointer;
